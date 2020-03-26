@@ -1,0 +1,154 @@
+body {
+    background-color: rgb(59, 59, 59);
+    color: rgb(250,250,250);
+    font: normal 20pt Helvetica;
+
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;    
+}
+
+h1{
+    color: rgb(255, 200, 20);
+    text-align: center;    
+}
+
+div.num{
+    color: rgb(80, 80, 80);
+    font-weight: 800;
+    width: 50px;
+    height: 30px;
+    padding: 15px 15px 15px 15px;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 15px;
+    cursor: pointer;
+    margin: 0px;
+    display: inline-block;
+    background-color: rgb(255, 200, 0);
+    transition: background-color 0.35s;
+    -webkit-transition: background-color 0.35s;
+    -moz-transition: background-color 0.35s;
+    -ms-transition: background-color 0.35s;
+    -o-transition: background-color 0.35s;
+}
+
+div.clean{
+    height: 36px;
+    line-height: 36px;
+}
+
+div.operator{
+    color: rgb(80, 80, 80);
+    font-weight: 800;
+    width: 50px;
+    height: 26.4px;
+    padding: 10px 10px 10px 10px;
+    text-align: center;
+    line-height: 26.4px;
+    border-radius: 15px;
+    cursor: pointer;
+    margin-bottom: 8px;
+    display: block;
+    background-color: rgb(255, 200, 0);
+    transition: background-color 0.35s;
+    -webkit-transition: background-color 0.35s;
+    -moz-transition: background-color 0.35s;
+    -ms-transition: background-color 0.35s;
+    -o-transition: background-color 0.35s;
+}
+
+/*active button colors*/
+div.numpadClick, div.button:active{
+    background-color: rgb(255, 230, 150);
+    transition: background-color 0s;
+    -webkit-transition: background-color 0s;
+    -moz-transition: background-color 0s;
+    -ms-transition: background-color 0s;
+    -o-transition: background-color 0s;
+}
+
+div#display{
+    color: rgb(80, 80, 80);
+    font-weight: 800;
+    width: 212px;
+    height: 30px;
+    padding: 15px 15px 15px 15px;
+    text-align: right;
+    line-height: 30px;
+    border-radius: 10px;
+    border: 3px rgb(255, 200, 0) solid;
+    background-color: rgb(227, 247, 255);
+    float: right;
+
+    -webkit-user-select: text;
+    -khtml-user-select: text;
+    -moz-user-select: text;
+    -ms-user-select: text;
+    user-select: text;   
+}
+
+div#history{
+    color: rgb(80, 80, 80);
+    font: normal 10pt Helvetica;
+    width: 300px;
+    height: 10px;
+    padding: 8px 15px 8px 15px;
+    text-align: right;
+    line-height: 10px;
+    border-radius:10px;
+    border: 3px rgb(255, 200, 0) solid;
+    background-color: rgb(227, 247, 255);
+
+    -webkit-user-select: text;
+    -khtml-user-select: text;
+    -moz-user-select: text;
+    -ms-user-select: text;
+    user-select: text;
+}
+
+div#num0{
+    width: 138px;
+}
+
+div#line{
+    margin-bottom: 8px;
+    display: block;
+}
+
+div#calculator{
+    width: 336px;
+    height: 380px;
+    margin: auto;
+    padding-top: 15px;
+}
+#frame{
+    width: 366px;
+    height: 408px;
+    margin: auto;
+    border-radius: 25px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+    background-color: rgb(92, 92, 92);
+}
+
+div#operatorBlock{
+    float: left;
+}
+
+div#numBlock{
+    margin-right: 8px;
+    float: left;
+}
+
+footer{
+    font: normal 10pt Helvetica;
+    text-align: center;
+    margin-top: 2em;
+}
+
+a.noDecoration{
+    color: inherit;
+    text-decoration: none;
+}
