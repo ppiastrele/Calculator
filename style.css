@@ -1,7 +1,11 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700,800,900&display=swap');
+
 body {
     background-color: rgb(59, 59, 59);
     color: rgb(250,250,250);
-    font: normal 20pt Helvetica;
+    font-weight: normal;
+    font-size: 20pt;
+    font-family: 'Roboto', sans-serif;
 
     -webkit-user-select: none;
     -khtml-user-select: none;
@@ -73,9 +77,9 @@ div.numpadClick, div.button:active{
 div#display{
     color: rgb(80, 80, 80);
     font-weight: 800;
-    width: 212px;
+    width: 218px;
     height: 30px;
-    padding: 15px 15px 15px 15px;
+    padding: 15px 12px 15px 12px;
     text-align: right;
     line-height: 30px;
     border-radius: 10px;
