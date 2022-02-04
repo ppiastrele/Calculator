@@ -121,7 +121,7 @@ function operar(button){
 }
 
 //operates and show the result
-function result(button){
+function result(){
     //check if the first number was added and if the display is not an opratin which garantees that we have the second number on display
     if(resultReady()){
         
@@ -168,7 +168,7 @@ function result(button){
 }
 
 //cleans the display, history and calculator parameters
-function clean(button){
+function clean(){
     res = false;
     firstNumber = null;
     secondNumber = null;

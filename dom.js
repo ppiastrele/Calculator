@@ -22,31 +22,31 @@ const history =  document.querySelector('div#history');
 const display =  document.querySelector('div#display');
 
 //watch for the click in each button
-num1.addEventListener('click', function(){clicar(num1);});
-num2.addEventListener('click', function(){clicar(num2);});
-num3.addEventListener('click', function(){clicar(num3);});
-num4.addEventListener('click', function(){clicar(num4);});
-num5.addEventListener('click', function(){clicar(num5);});
-num6.addEventListener('click', function(){clicar(num6);});
-num7.addEventListener('click', function(){clicar(num7);});
-num8.addEventListener('click', function(){clicar(num8);});
-num9.addEventListener('click', function(){clicar(num9);});
-num0.addEventListener('click', function(){clicar(num0);});
-numDot.addEventListener('click', function(){ponto(numDot);});
-numMult.addEventListener('click', function(){operar(numMult);});
-numDiv.addEventListener('click', function(){operar(numDiv);});
-numAdd.addEventListener('click', function(){operar(numAdd);});
-numSub.addEventListener('click', function(){operar(numSub);});
-numEqual.addEventListener('click', function(){result(numEqual);});
-cc.addEventListener('click', function(){clean(cc);});
+num1.addEventListener('click', () => clicar(num1));
+num2.addEventListener('click', () => clicar(num2));
+num3.addEventListener('click', () => clicar(num3));
+num4.addEventListener('click', () => clicar(num4));
+num5.addEventListener('click', () => clicar(num5));
+num6.addEventListener('click', () => clicar(num6));
+num7.addEventListener('click', () => clicar(num7));
+num8.addEventListener('click', () => clicar(num8));
+num9.addEventListener('click', () => clicar(num9));
+num0.addEventListener('click', () => clicar(num0));
+numDot.addEventListener('click', () => ponto(numDot));
+numMult.addEventListener('click', () => operar(numMult));
+numDiv.addEventListener('click', () => operar(numDiv));
+numAdd.addEventListener('click', () => operar(numAdd));
+numSub.addEventListener('click', () => operar(numSub));
+numEqual.addEventListener('click', () => result());
+cc.addEventListener('click', () => clean());
 
 //watch for numeric keyboard clicks
-document.addEventListener("keydown", function(){keydown(event);});
-document.addEventListener("keyup", function(){keyup(event);})
+document.addEventListener("keydown", (event) => keydown(event));
+document.addEventListener("keyup", (event) => keyup(event))
 
 //watch for screen touchs
-document.addEventListener("touchstart", function(){touchStart(event);});
-document.addEventListener("touchend", function(){touchEnd(event);});
+document.addEventListener("touchstart", (event) => touchStart(event));
+document.addEventListener("touchend", (event) => touchEnd(event));
 //prevent menu opening from long touch
 oncontextmenu = function(e){
     e.preventDefault();
@@ -125,7 +125,7 @@ function keydown(e){
             break
         case 46:
             cc.classList.add('numpadClick');
-            clean(cc);
+            clean();
             break
         case 13:
             numEqual.classList.add('numpadClick');
